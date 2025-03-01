@@ -1,110 +1,83 @@
 # 🎓 Educational Institution Management System
 
 ## 📋 Overview
-This application is a comprehensive information system for managing an educational platform through a graphical user interface. It handles student and professor management as well as the administration of current operations within study programs.
+This application is a comprehensive information system for managing an educational platform through a graphical user interface. It streamlines student and professor management as well as the administration of current operations within study programs.
 
-## ✨ Features
+## ✨ Key Features
 
-### 🔐 Authentication
-- Users can access the application through an authentication process
-- User types: Students, Professors, Administrators, and Super Administrators
-- All users can view their personal data and log out
+### 🔐 Authentication System
+- Secure login with username and password
+- User registration with personal data collection
+- Role-based access control for different user types
+- Automatic session management and secure logout
 
-### 👨‍🏫 Professor Features
-- View personal information
-- Access information about planned activities for the current day
-- Schedule activities in the calendar
-- View list of taught courses with details on minimum and maximum hours
-- Display department information
-- Evaluate students by grading different types of activities
-- Define weighted percentages for each course they teach
-- Quick access to the catalog to manage students by courses with grade entry option
+### 👨‍🏫 For Professors
+- Personal dashboard with profile information
+- Daily activity planner and scheduling tool
+- Course management interface
+- Custom grading system with weighted components
+- Electronic gradebook for student evaluation
+- Department information and course assignment details
+- Automatic hour tracking system
+- Student performance analytics
 
-### 👨‍🎓 Student Features
-- View personal data
-- Send messages to study groups
-- Register for and drop courses
-- View grades
-- View scheduled activities for the current day with PDF download option
-- Create group activities with specific details
-- Join study groups associated with enrolled courses
-- Access group messages, view group members, and see the associated professor for effective collaboration
+### 👨‍🎓 For Students
+- User-friendly profile dashboard
+- Course registration and management system
+- Interactive grade viewing interface
+- Study group collaboration platform
+- Messaging system for peer communication
+- Daily schedule viewer with PDF export functionality
+- Group activity creation and management tools
+- Course material access system
 
-### 👨‍💼 Administrator and Super Administrator Features
-- View personal data
-- Add and delete information in the database (students, professors, or courses)
-- Search for users by name
-- Assign professors to courses
-- Search for courses by name, displaying detailed information including professor IDs
-- Super administrators have extended control over other administrators
+### 👨‍💼 For Administrators
+- Comprehensive user management system
+- Student and professor database administration
+- Advanced search functionality by name or username
+- Course creation and management tools
+- Professor-course assignment interface
+- System-wide configuration options
 
-## 🗄️ Database Design
-The system uses 14 tables to store necessary data:
-- Students
-- Professors
-- Administrators
-- SuperAdministrators
-- Courses
-- ActivityScheduling
-- StudentEnrollments_Activity
-- StudentEnrollments_Course
-- Grades
-- StudyGroups
-- Group_Activities
-- GroupMembers
-- GroupMessages
-- CoursePercentages
+### 🦸‍♂️ For Super Administrators
+- All administrator privileges
+- Administrator account management
+- System-wide access control
+- High-level configuration management
 
-## 🛠️ Technical Implementation
+## 🖥️ User Interface Highlights
 
-### 🔌 Connection Package
-Contains the MyConnection class that handles the connection between the Java application and the MySQL database. This class implements multiple static methods used for SQL procedure calls:
+### Login Interface
+- Clean and intuitive login form
+- Registration option for new users
+- Password security features
 
-#### ➕ Insert Methods
-- AddActivity
-- AddGroupActivity
-- AddAdministrator
-- AddGrade
-- AddProfessor
-- AddStudent
-- AddSuperAdministrator
-- Join_Leave_Group
-- Course_Enrollment
-- ScheduleActivity
+### Student Portal
+- Tab-based navigation system
+- Personal data display in tabular format
+- Course enrollment interface with search functionality
+- Interactive grade visualization
+- Study group management with member lists
+- Messaging interface with chat history
+- Schedule viewer with calendar integration
+- PDF export functionality for schedules
 
-#### 🔄 Update Methods
-- SetActivityWeights
-- UpdateCourse
+### Professor Portal
+- Personal information dashboard
+- Course weight configuration tool for grade calculation
+- Electronic gradebook with student filtering
+- Activity scheduling interface
 
-#### ❌ Delete Methods
-- Join_Leave_Group
+### Administrator Portal
+- User search and management interface
+- Database record manipulation tools
+- Professor-course assignment system
+- Confirmation dialogues for important actions
 
-#### 🔍 Query Methods
-- SearchAdministratorByUserName
-- SearchProfessorByUserName
-- SearchAdministratorByName
-- SearchCourseByName
-- SearchProfessorByName
-- SearchStudentByName
-- SearchStudentByUserName
-- SearchSuperAdministratorByName
-- SearchSuperAdministratorByUserName
+## 📊 Database Structure
+The system uses a relational database model with tables for students, professors, administrators, courses, activities, enrollments, grades, study groups, and communication.
 
-### 🖥️ GUI Package
-The application includes multiple interfaces:
+## 🚀 Future Development
+We plan to implement a course materials repository where professors can upload validated learning resources for students, providing quality educational content directly through the platform.
 
-- Login page
-- Student interface with:
-  - Personal data view
-  - Course enrollment options
-  - Grade viewing
-  - Study group management
-  - Activity calendar and PDF export
-- Professor interface with:
-  - Personal data view
-  - Course percentage settings
-  - Grade management
-- Administrator/Super Administrator interface with:
-  - User search and management
-  - Course-Professor assignment
-  - Database record management
+## 👥 Team Project
