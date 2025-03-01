@@ -1,0 +1,8 @@
+DELIMITER //
+
+CREATE PROCEDURE VizualizareCursuri()
+BEGIN
+    SELECT * FROM Cursuri;
+END //
+
+DELIMITER ;

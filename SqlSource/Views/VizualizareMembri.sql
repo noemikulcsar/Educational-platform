@@ -1,0 +1,8 @@
+DELIMITER //
+
+CREATE PROCEDURE VizualizareMembriGrup()
+BEGIN
+    SELECT * FROM MembriGrup;
+END //
+
+DELIMITER ;
