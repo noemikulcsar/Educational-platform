@@ -81,3 +81,6 @@ The system uses a relational database model with tables for students, professors
 We plan to implement a course materials repository where professors can upload validated learning resources for students, providing quality educational content directly through the platform.
 
 ## 👥 Team Project
+💡 Kulcsar Noemi https://github.com/noemikulcsar \
+💡 Repede Oana https://github.com/oanadamaris \
+💡 Ureche Simona https://github.com/SimonaUreche
